@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "697e9cc4-5ef5-4309-bbff-29c78f8f048e",
+		"name": "REST Public",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42661966"
+	},
+	"item": [
+		{
+			"name": "Get Server Time",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{serverTime}}",
+					"host": [
+						"{{baseUrl}}{{serverTime}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Exchange Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{exchangeInfo}}",
+					"host": [
+						"{{baseUrl}}{{exchangeInfo}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tickers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{ticker}}?pairSymbol=USDTTRY",
+					"host": [
+						"{{baseUrl}}{{ticker}}"
+					],
+					"query": [
+						{
+							"key": "pairSymbol",
+							"value": "USDTTRY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Trades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{trades}}?pairSymbol=USDTTRY&last=10",
+					"host": [
+						"{{baseUrl}}{{trades}}"
+					],
+					"query": [
+						{
+							"key": "pairSymbol",
+							"value": "USDTTRY"
+						},
+						{
+							"key": "last",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get OrderBook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{orderBook}}?pairSymbol=USDTTRY&limit=25",
+					"host": [
+						"{{baseUrl}}{{orderBook}}"
+					],
+					"query": [
+						{
+							"key": "pairSymbol",
+							"value": "USDTTRY"
+						},
+						{
+							"key": "limit",
+							"value": "25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get OHLC Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ohlcs}}?pair=USDTTRY&from=1639526000&to=1639526100",
+					"host": [
+						"{{ohlcs}}"
+					],
+					"query": [
+						{
+							"key": "pair",
+							"value": "USDTTRY"
+						},
+						{
+							"key": "from",
+							"value": "1639526000"
+						},
+						{
+							"key": "to",
+							"value": "1639526100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Kline Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{klines}}?from=1700000000&resolution=60&symbol=USDTTRY&to=1700000100",
+					"host": [
+						"{{klines}}"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "1700000000"
+						},
+						{
+							"key": "resolution",
+							"value": "60"
+						},
+						{
+							"key": "symbol",
+							"value": "USDTTRY"
+						},
+						{
+							"key": "to",
+							"value": "1700000100"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

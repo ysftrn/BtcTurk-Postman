@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "1ffddf42-4a9a-4f85-a388-113f2d9487e3",
+		"name": "REST Private",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42661966"
+	},
+	"item": [
+		{
+			"name": "Get Account Balance",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{getBalances}}",
+					"host": [
+						"{{baseUrl}}{{getBalances}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Transactions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{getUserTransactions}}?type=buy&type=sell&symbol=btc&symbol=try&symbol=usdt\"",
+					"host": [
+						"{{baseUrl}}{{getUserTransactions}}"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "buy"
+						},
+						{
+							"key": "type",
+							"value": "sell"
+						},
+						{
+							"key": "symbol",
+							"value": "btc"
+						},
+						{
+							"key": "symbol",
+							"value": "try"
+						},
+						{
+							"key": "symbol",
+							"value": "usdt\""
+						},
+						{
+							"key": "orderId",
+							"value": "28903259743",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Fiat Transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{getFiatTtransactions}}?startDate=1755850541550",
+					"host": [
+						"{{baseUrl}}{{getFiatTtransactions}}"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "deposit",
+							"disabled": true
+						},
+						{
+							"key": "type",
+							"value": "withdrawal",
+							"disabled": true
+						},
+						{
+							"key": "symbol",
+							"value": "TRY",
+							"disabled": true
+						},
+						{
+							"key": "symbol",
+							"value": "USDT",
+							"disabled": true
+						},
+						{
+							"key": "startDate",
+							"value": "1755850541550"
+						},
+						{
+							"key": "endDate",
+							"value": "1755860559550",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Crypto Transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{getCryptoTransaction}}?type=deposit&symbol=TRX&startDate=1655860559550",
+					"host": [
+						"{{baseUrl}}{{getCryptoTransaction}}"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "deposit"
+						},
+						{
+							"key": "type",
+							"value": "withdrawal",
+							"disabled": true
+						},
+						{
+							"key": "symbol",
+							"value": "TRX"
+						},
+						{
+							"key": "startDate",
+							"value": "1655860559550"
+						},
+						{
+							"key": "endDate",
+							"value": "1755860559550",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Open Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{getOpenOrders}}",
+					"host": [
+						"{{baseUrl}}{{getOpenOrders}}"
+					],
+					"query": [
+						{
+							"key": "paisSymbol",
+							"value": "USDTTRY",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{getAllOrders}}?pairSymbol=ETHUSDT",
+					"host": [
+						"{{baseUrl}}{{getAllOrders}}"
+					],
+					"query": [
+						{
+							"key": "pairSymbol",
+							"value": "ETHUSDT"
+						},
+						{
+							"key": "orderId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "startTime",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "endTime",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{getSingleOrder}}/:orderId",
+					"host": [
+						"{{baseUrl}}{{getSingleOrder}}"
+					],
+					"path": [
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "28822711887"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit an Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quantity\": 15,\n    \"price\": 39.100,\n    \"stopPrice\": 0,\n    \"newOrderClientId\": \"Test\",\n    \"orderMethod\": \"limit\",\n    \"orderType\": \"buy\",\n    \"pairSymbol\": \"USDTTRY\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}{{postSubmitOrder}}",
+					"host": [
+						"{{baseUrl}}{{postSubmitOrder}}"
+					],
+					"query": [
+						{
+							"key": "use -->  Body Tab - raw json to change order parameters",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel an Order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}{{deleteCancelOrder}}?id=28915329823",
+					"host": [
+						"{{baseUrl}}{{deleteCancelOrder}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "28915329823"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"const apiKey = pm.environment.get(\"apiKey\");",
+					"const apiSecretB64 = pm.environment.get(\"apiSecret\"); // BASE64 string",
+					"",
+					"if (!apiKey || !apiSecretB64) {",
+					"  throw new Error(\"Missing api-key or api-secret in Environment/Globals.\");",
+					"}",
+					"",
+					"// Decode secret (base64 → WordArray)",
+					"const apiSecret = CryptoJS.enc.Base64.parse(apiSecretB64);",
+					"",
+					"// Stamp = ms timestamp",
+					"const stamp = Date.now().toString();",
+					"",
+					"// Data = apiKey + stamp (UTF-8)",
+					"const data = CryptoJS.enc.Utf8.parse(apiKey + stamp);",
+					"",
+					"// HMAC-SHA256",
+					"const hmac = CryptoJS.HmacSHA256(data, apiSecret);",
+					"",
+					"// Base64 encode result",
+					"const signature = CryptoJS.enc.Base64.stringify(hmac);",
+					"",
+					"// Upsert headers",
+					"pm.request.headers.upsert({ key: \"X-PCK\", value: apiKey });",
+					"pm.request.headers.upsert({ key: \"X-Stamp\", value: stamp });",
+					"pm.request.headers.upsert({ key: \"X-Signature\", value: signature });",
+					"pm.request.headers.upsert({ key: \"Content-Type\", value: \"application/json\" });",
+					"",
+					"// console.log({ stamp, signature });"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

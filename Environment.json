@@ -1,0 +1,220 @@
+{
+	"id": "7db15dff-2842-447f-86cb-012cd8f109fe",
+	"name": "BtcTurk Live Environment",
+	"values": [
+		{
+			"key": "API KEYS",
+			"value": "",
+			"type": "default",
+			"description": "",
+			"enabled": false
+		},
+		{
+			"key": "apiKey",
+			"value": "API_KEY_HERE",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "apiSecret",
+			"value": "API_SECRET_HERE",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "baseUrl",
+			"value": "https://api.btcturk.com",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "Public REST Endpoints",
+			"value": "",
+			"type": "default",
+			"description": "",
+			"enabled": false
+		},
+		{
+			"key": "serverTime",
+			"value": "/api/v2/server/time",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "exchangeInfo",
+			"value": "/api/v2/server/exchangeinfo",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "ticker",
+			"value": "/api/v2/ticker",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "orderBook",
+			"value": "/api/v2/orderbook",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "ohlcs",
+			"value": "https://graph-api.btcturk.com/v1/ohlcs",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "klines",
+			"value": "https://graph-api.btcturk.com/v1/klines/history",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "trades",
+			"value": "/api/v2/trades",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "Private REST Endpoints",
+			"value": "",
+			"type": "default",
+			"description": "",
+			"enabled": false
+		},
+		{
+			"key": "getBalances",
+			"value": "/api/v1/users/balances",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "getUserTransactions",
+			"value": "/api/v1/users/transactions/trade",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "getFiatTtransactions",
+			"value": "/api/v1/users/transactions/fiat",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "getCryptoTransaction",
+			"value": "/api/v1/users/transactions/crypto",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "getOpenOrders",
+			"value": "/api/v1/openOrders",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "getAllOrders",
+			"value": "/api/v1/allOrders",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "getSingleOrder",
+			"value": "/api/v1/order",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "postSubmitOrder",
+			"value": "/api/v1/order",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "deleteCancelOrder",
+			"value": "/api/v1/order",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-08-26T08:25:05.406Z",
+	"_postman_exported_using": "Postman/11.60.1"
+}
